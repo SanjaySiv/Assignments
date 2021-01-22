@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class PalindromeCheck {
     public static void main(String[] args){
         Scanner ob=new Scanner(System.in);
+
         System.out.println("Enter word to check palindrome : ");
         String str=ob.nextLine();
         str=str.toLowerCase();
@@ -16,6 +17,7 @@ public class PalindromeCheck {
         StringBuilder str1=new StringBuilder(str.toLowerCase());  //using StringBuilder
         str1.reverse();
         String rev=str1.toString();
+
         if(rev.equals(str)){
             System.out.println(str+" is a palindrome");
         }
